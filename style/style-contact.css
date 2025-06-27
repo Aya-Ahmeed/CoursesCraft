@@ -74,7 +74,7 @@ body {
 .nav-items a {
     text-decoration: none;
     color: rgb(68, 68, 68);
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .nav-items li:hover {
@@ -100,8 +100,15 @@ body {
     height: 85%;
 }
 .top-side {
-     width:20%;
-     height: auto;
+     color:transparent;
+  background: linear-gradient(to right, #6c5ce7, #FC427B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding:0 1rem;
+  /* padding-top: 2.5em; */
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .bottom-side{
     display: flex;

@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* div {
+    border: solid 1px;
+} */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+.heading{
+  color:transparent;
+  background: linear-gradient(to right, #6c5ce7, #FC427B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size:3rem;
+  text-transform: uppercase;
+}
+.container-one .nav-bar,
+.icon-symbol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.head-name {
+   font-size: 25px;
+    font-weight: bold;
+    padding-left: 0.5em;
+    animation: leftRight 2s ease-in-out infinite;
+}
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#head-part2 {
+    color: #FC427B;
+}
+
+#head-part1 {
+    color: #6c5ce7;
+}
+
+.nav-bar {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px lightgray;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+.nav-items li:hover {
+    border-bottom: solid 2px #FC427B;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.nav-items a:hover {
+    color: #6c5ce7;
+}
+
+ section{
+  padding:2rem 7%;
+}
+.teacher{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.teacher .box{
+  flex:1 1 23rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  border-radius:.5rem;
+  padding:1.5rem;
+  text-align: center;
+}
+
+.teacher .box img{
+  height: 10rem;
+  width:10rem;
+  margin:.5rem 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teacher .box h3{
+  color:#6c5ce7;
+  font-size: 2.5rem;
+}
+
+.teacher .box span{
+  color:#FC427B;
+  font-size: 2rem;
+}
+
+.teacher .box p{
+  color:#666;
+  font-size: 1.5rem;
+  padding:1rem 0;
+}
+
+.teacher .box .share a{
+  height:4rem;
+  width:4rem;
+  line-height: 4rem;
+  font-size: 2rem;
+  background:#FC427B;
+  border-radius: .5rem;
+  margin:.3rem;
+  color:#fff;
+}
+
+.teacher .box .share a:hover{
+  background:#6c5ce7;
+}
