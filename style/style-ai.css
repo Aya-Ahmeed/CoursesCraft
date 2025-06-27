@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* div {
+    border: solid 1px;
+} */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+.heading{
+  color:transparent;
+  background: linear-gradient(to right, #6c5ce7, #FC427B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding-left:2rem;
+  padding-top: 2.5rem;
+  text-align: left;
+  font-size:2rem;
+}
+.container-one .nav-bar,
+.icon-symbol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.head-name {
+   font-size: 25px;
+    font-weight: bold;
+    padding-left: 0.5em;
+    animation: leftRight 2s ease-in-out infinite;
+}
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#head-part2 {
+    color: #FC427B;
+}
+
+#head-part1 {
+    color: #6c5ce7;
+}
+.nav-bar {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px lightgray;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+.nav-items li:hover {
+    border-bottom: solid 2px #FC427B;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.nav-items a:hover {
+    color: #6c5ce7;
+}
+section{
+  padding:2rem;
+}
+.container{
+   display:flex;
+   flex-direction: column;
+   align-content: space-between;
+   height:35rem;
+   width: 98%;
+   border-radius: 3rem;
+   border-color: lightgray;
+   background-color: rgba(216, 201, 201, 0.444);
+}
+.course-one,
+.course-two{
+    width: 60%;
+    height: calc(33rem / 2);
+    margin:1rem;
+    display: flex;
+    flex-direction: row;
+    padding:1rem;
+    justify-content: space-evenly;
+    border-radius: 3rem;
+   border-color: lightgray;
+}
+.left{
+    width:30%;
+    height: 90%;
+    background-image: url("../images/machine_learning.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.left-side{
+    width:30%;
+    height: 90%;
+    background-image: url("../images/deep-learning.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.right{
+    width:65%;
+    height: 90%;
+    padding:1rem;
+}
+.head{
+    font-size: 1.5rem;
+    margin:1rem;
+    background: linear-gradient(to right, #6c5ce7, #FC427B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.para{
+    color:rgb(182, 160, 160);
+    margin:1rem
+}
+.para2{
+    margin:1rem;
+    background: linear-gradient(to right, #6c5ce7, #FC427B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn{
+     margin:1rem;
+     color:#fff;
+     background: linear-gradient(to right, #6c5ce7, #FC427B);
+     width:23%;
+     height: 30px;
+     border-radius: 1rem;
+}
+input[type="button"]{
+    color:#fff;
+     background: linear-gradient(to right, #6c5ce7, #FC427B);
+     width: 100%;
+     height: 30px;
+     border-radius: 1rem;
+}
+.course-one:hover,
+.course-two:hover{
+     transform: scale(1.05);
+     transition: 1s;
+}
+
