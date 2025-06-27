@@ -111,12 +111,27 @@ body {
     white-space: nowrap;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     z-index: 999;
-    transition: 0.2s ease-in-out;
+    min-width: 180px;
 }
-.profile-container {
-    position: relative;
+
+#welcome-box p {
+    margin: 0 0 8px 0;
+}
+
+#welcome-box #logout-btn {
+    background-color: #fc5285;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
     cursor: pointer;
+    width: 100%;
 }
+
+#welcome-box #logout-btn:hover {
+    background-color: #e54873;
+}
+
  section{
   padding:2rem 7%;
 }
