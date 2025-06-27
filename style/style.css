@@ -49,7 +49,7 @@ body {
     height: auto;
 }
 
-.head-name,
+
 .form-part2 #head-two,
 #link-signup,
 #head-sign,
@@ -64,6 +64,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     padding-left: 0.5em;
+    animation: leftRight 2s ease-in-out infinite;
 }
 
 @keyframes leftRight {
