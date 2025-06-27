@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         localStorage.removeItem("justSignedUp");
     }
-
     loginBtn.addEventListener("click", function (e) {
         e.preventDefault();
 
@@ -34,9 +33,9 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("justLoggedIn", JSON.stringify({
                 username: foundUser.username
             }));
-
+     
             window.location.href = "../structure/Home.html";
         }
-
+        
     });
 });

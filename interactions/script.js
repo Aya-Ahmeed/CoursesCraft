@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const profileIcon = document.getElementById("profile-icon");
     const welcomeBox = document.getElementById("welcome-box");
     const usernameSpan = document.getElementById("username-placeholder");
+    const logoutBtn = document.getElementById("logout-btn");
 
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const lastLogin = JSON.parse(localStorage.getItem("justLoggedIn"));
@@ -14,11 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     profileIcon.addEventListener("click", function () {
-        if (welcomeBox.style.display === "none") {
-            welcomeBox.style.display = "block";
-        } else {
-            welcomeBox.style.display = "none";
-        }
+        welcomeBox.style.display = (welcomeBox.style.display === "block") ? "none" : "block";
     });
 
     document.addEventListener("click", function (e) {
@@ -26,4 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
             welcomeBox.style.display = "none";
         }
     });
+
+    logoutBtn.addEventListener("click", function () {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("justLoggedIn");
+        window.location.href = "../structure/index.html"; 
+    });
 });
+
