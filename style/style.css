@@ -295,3 +295,27 @@ input[type=password],
 #star {
     color: red;
 }
+.nav-items{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:10px;
+}
+.nav-items li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 20px;
+}
+.nav-items li:hover{
+    border-bottom: solid 2px #FC427B;
+    transform: scale(1.2);
+    transition: 1s;
+}
+.nav-items a:hover{
+    color:#6c5ce7;
+}
