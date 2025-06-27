@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* div {
+    border: solid 1px;
+} */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+.heading{
+  color:transparent;
+  background: linear-gradient(to right, #6c5ce7, #FC427B);
+  -webkit-background-clip: text;
+  background-clip: text;
+  padding:0 1rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-size:3rem;
+  text-transform: uppercase;
+}
+.container-one .nav-bar,
+.icon-symbol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.head-name {
+   font-size: 25px;
+    font-weight: bold;
+    padding-left: 0.5em;
+    animation: leftRight 2s ease-in-out infinite;
+}
+@keyframes leftRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#head-part2 {
+    color: #FC427B;
+}
+
+#head-part1 {
+    color: #6c5ce7;
+}
+
+.nav-bar {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 1px lightgray;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.nav-items li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+.nav-items li:hover {
+    border-bottom: solid 2px #FC427B;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.nav-items a:hover {
+    color: #6c5ce7;
+}
+section{
+  padding:1rem 7%;
+}
+.review{
+  display: flex;
+  flex-wrap: wrap;
+  gap:3em;
+}
+
+.review .box{
+  border-radius: .5rem;
+  border:.1rem solid rgba(0,0,0,.1);
+  padding:1rem;
+  flex:1 1 10em;
+}
+.review .box:hover{
+  box-shadow: 1px 1px 1px 1px  rgb(222, 220, 220);
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.review .box .student{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review .box .student .student-info{
+  display: flex;
+  align-items: center;
+}
+
+.review .box .student i{
+  font-size: 5em;
+  color:#FC427B;
+  opacity: .5;
+}
+
+.review .box .student .student-info img{
+  border-radius: 50%;
+  object-fit: cover;
+  height: 7rem;
+  width:7rem;
+  margin-right: 1.5rem;
+}
+
+.review .box .student .student-info h3{
+  font-size: 2rem;
+  color:#333;
+}
+
+.review .box .student .student-info span{
+  font-size: 1rem;
+  color:#FC427B;
+}
+
+.review .box .text{
+  padding:0.4rem 0;
+  font-size: 1rem;
+  color:#666;
+}

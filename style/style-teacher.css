@@ -113,7 +113,11 @@ body {
   padding:1em;
   text-align: center;
 }
-
+.teacher .box:hover{
+  box-shadow: 1px 1px 1px 1px  rgb(222, 220, 220);
+  transform: scale(1.03);
+  transition: 0.3s;
+}
 .teacher .box img{
   height: 10rem;
   width:10rem;
