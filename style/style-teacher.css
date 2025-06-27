@@ -103,14 +103,14 @@ body {
 .teacher{
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  gap:1em;
 }
 
 .teacher .box{
-  flex:1 1 23rem;
+  flex:1 1 15em;
   border:.1rem solid rgba(0,0,0,.1);
   border-radius:.5rem;
-  padding:1.5rem;
+  padding:1em;
   text-align: center;
 }
 
