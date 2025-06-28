@@ -5,7 +5,8 @@
     font-family: 'Nunito', sans-serif;
 }
 
-/* div {
+/* div,
+li {
     border: solid 1px;
 } */
 
@@ -14,29 +15,22 @@ body {
     height: 100vh;
     background: #fff;
 }
-.heading{
-  color:transparent;
-  background: linear-gradient(to right, #6c5ce7, #FC427B);
-  -webkit-background-clip: text;
-  background-clip: text;
-  padding-left:2rem;
-  padding-top: 2.5rem;
-  text-align: left;
-  font-size:2rem;
-}
-.container-one .nav-bar,
+
+.container .nav-bar,
 .icon-symbol {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 }
+
 .head-name {
-   font-size: 25px;
+    font-size: 25px;
     font-weight: bold;
     padding-left: 0.5em;
     animation: leftRight 2s ease-in-out infinite;
 }
+
 @keyframes leftRight {
     0% {
         transform: translateX(0);
@@ -58,6 +52,7 @@ body {
 #head-part1 {
     color: #6c5ce7;
 }
+
 .nav-bar {
     width: 100%;
     height: auto;
@@ -92,6 +87,7 @@ body {
 .nav-items a:hover {
     color: #6c5ce7;
 }
+
 #welcome-box {
     display: none;
     position: absolute;
@@ -108,9 +104,11 @@ body {
     z-index: 999;
     min-width: 180px;
 }
-#profile-icon{
+
+#profile-icon {
     cursor: pointer;
 }
+
 #welcome-box p {
     margin: 0 0 8px 0;
 }
@@ -129,94 +127,69 @@ body {
     background-color: #e54873;
 }
 
-section{
-  padding:2rem;
+.heading {
+    color: transparent;
+    background: linear-gradient(to right, #6c5ce7, #FC427B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding-left: 2rem;
+    padding-top: 2.5rem;
+    text-align: left;
+    font-size: 2rem;
 }
-.container{
-   display:flex;
-   flex-direction: column;
-   align-content: space-between;
-   height:35rem;
-   width: 98%;
-   border-radius: 3rem;
-   border-color: lightgray;
-    background-color: rgba(216, 201, 201, 0.444);
+
+section {
+    padding: 2rem;
 }
-.course-one,
-.course-two{
-    width: 60%;
-    height: calc(33rem / 2);
-    margin:1rem;
+
+.course-links-container {
+    width: 90%;
+    height: 30rem;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    background: linear-gradient(to right, #6c5ce7, #FC427B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 2rem;
     display: flex;
-    flex-direction: row;
-    padding:1rem;
-    justify-content: space-evenly;
-    border-radius: 3rem;
-   border-color: lightgray;
+    justify-content: center;
 }
-.left{
-    width:30%;
-    height: 90%;
-    background-image: url("../images/course-marking.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+
+.video-links {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
 }
-.left-side{
-    width:30%;
-    height: 90%;
-    background-image: url("../images/digital-marketing.jpeg");
-    background-repeat: no-repeat;
-    background-size: contain;
+
+.video-links li {
+    margin: 1rem 0;
+    font-size: 1.4rem;
 }
-.right{
-    width:65%;
-    height: 90%;
-    padding:1rem;
+
+.video-links a {
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    height: 4rem ;
+    box-shadow: 2px 2px 2px 2px #de5f85;
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+   
 }
-.head{
-    font-size: 1.5rem;
-    margin:1rem;
+
+.video-links a:hover {
+    transform: scale(1.05);
     background: linear-gradient(to right, #6c5ce7, #FC427B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.para{
-    color:rgb(182, 160, 160);
-    margin:1rem
-}
-.para2{
-    margin:1rem;
-    background: linear-gradient(to right, #6c5ce7, #FC427B);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.btn{
-     margin:1rem;
-     color:#fff;
-     background: linear-gradient(to right, #6c5ce7, #FC427B);
-     width:23%;
-     height: 30px;
-     border-radius: 1rem;
-     cursor: pointer;
-}
-input[type="button"]{
     color:#fff;
-     background: linear-gradient(to right, #6c5ce7, #FC427B);
-     width: 100%;
-     height: 30px;
-     border-radius: 1rem;
-     cursor: pointer;
+    transition: 0.8s;
 }
-.course-one:hover,
-.course-two:hover{
-     transform: scale(1.05);
-     transition: 1s;
-}
-.nav-items a.active {
-    color:#6c5ce7;
-    font-weight: bold;
-    border-bottom: 2px solid #fc5285;
-   font-size: 1.3em;
-}
-
-
