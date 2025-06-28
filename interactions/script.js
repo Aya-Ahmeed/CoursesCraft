@@ -1,14 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll(".nav-items a");
 
-    navLinks.forEach(link => {
-        if (link.href.includes(location.pathname.split("/").pop())) {
-            link.classList.add("active");
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
     const profileIcon = document.getElementById("profile-icon");
     const welcomeBox = document.getElementById("welcome-box");
     const usernameSpan = document.getElementById("username-placeholder");
@@ -37,7 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
     logoutBtn.addEventListener("click", function () {
         localStorage.removeItem("isLoggedIn");
         localStorage.removeItem("justLoggedIn");
-        window.location.href = "../structure/index.html"; 
+        window.location.href = "../structure/index.html";
     });
-});
 
+    const hamburger = document.getElementById('hamburger');
+    const navItems = document.getElementById('nav-items');
+
+    if (hamburger && navItems) {
+        hamburger.addEventListener('click', () => {
+            navItems.classList.toggle('show');
+        });
+    }
+});

@@ -193,3 +193,119 @@ section{
     border-bottom: 2px solid #fc5285;
    font-size: 1.3em;
 }
+#nav-items.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c5ce7;
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #nav-items.show {
+        display: flex;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .designing-div,
+    .development-div,
+    .Ai-div,
+    .marketing-div {
+        width: 90%;
+        height: auto;
+    }
+
+    .icon-log,
+    .name-course,
+    .name-course1,
+    .description {
+        padding: 1rem 0.5rem;
+        text-align: center;
+    }
+
+    .heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .container-one .nav-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .nav-items {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .designing-div,
+    .development-div,
+    .Ai-div,
+    .marketing-div {
+        width: 45%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .icon-log,
+    .name-course,
+    .name-course1,
+    .description {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}

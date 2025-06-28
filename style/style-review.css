@@ -198,4 +198,159 @@ section{
     border-bottom: 2px solid #fc5285;
    font-size: 1.3em;
 }
+#nav-items.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c5ce7;
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .nav-items li {
+    margin: 0.5rem 0;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.5rem 1rem 0.5rem;
+  }
+
+  .review {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .review .box {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .review .box .student i {
+    font-size: 2.5em;
+  }
+
+  .review .box .student .student-info img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 1rem;
+  }
+
+  .review .box .student .student-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .review .box .text {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .nav-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .nav-items.show {
+    display: flex;
+  }
+
+  .nav-items li {
+    margin: 0.5rem 0;
+  }
+
+  .heading {
+    font-size: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .review {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review .box {
+    width: 90%;
+  }
+
+  .review .box .student i {
+    font-size: 3em;
+  }
+
+  .review .box .student .student-info img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .review .box .student .student-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .review .box .text {
+    font-size: 0.95rem;
+  }
+}
+
 

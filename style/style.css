@@ -296,12 +296,14 @@ input[type=password],
 #star {
     color: red;
 }
-.nav-items{
-    display:flex;
+
+.nav-items {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding:10px;
+    padding: 10px;
 }
+
 .nav-items li {
     list-style: none;
     margin: 0 10px;
@@ -312,13 +314,16 @@ input[type=password],
     color: rgb(68, 68, 68);
     font-size: 15px;
 }
-.nav-items li:hover{
+
+.nav-items li:hover {
     transform: scale(1.2);
     transition: 1s;
 }
-.nav-items a:hover{
-    color:#6c5ce7;
+
+.nav-items a:hover {
+    color: #6c5ce7;
 }
+
 #welcome-box {
     display: none;
     position: absolute;
@@ -335,9 +340,11 @@ input[type=password],
     z-index: 999;
     min-width: 180px;
 }
-#profile-icon{
+
+#profile-icon {
     cursor: pointer;
 }
+
 #welcome-box p {
     margin: 0 0 8px 0;
 }
@@ -355,11 +362,205 @@ input[type=password],
 #welcome-box #logout-btn:hover {
     background-color: #e54873;
 }
+
 .nav-items a.active {
-    color:#6c5ce7;
+    color: #6c5ce7;
     font-weight: bold;
     border-bottom: 2px solid #fc5285;
-   font-size: 1.3em;
+    font-size: 1.3em;
+}
+
+#nav-items.show {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6c5ce7;
+}
+
+@media (max-width: 768px) {
+
+    .container-one .nav-bar,
+    .icon-symbol,
+    .registertion {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .container-two .section-part {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .heading-one,
+    .img-one {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    #txt-one {
+        height: auto;
+        padding: 1em;
+    }
+
+    .img-one {
+        background-size: contain;
+        background-position: center;
+        height: 300px;
+    }
+
+    .registertion {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .container-two {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .container-three,
+    .container-four {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+
+    .left,
+    .left-side,
+    .right,
+    .right-side {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .right,
+    .right-side {
+        background-position: center;
+        background-size: contain;
+        height: 250px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 10px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-items.show {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
 }
 
 
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .nav-bar,
+    .registertion,
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-items {
+        flex-wrap: wrap;
+    }
+
+    .heading-one {
+        font-size: 28px;
+        padding: 1.5em;
+    }
+
+    .bottom {
+        font-size: 16px;
+    }
+
+    .container-three,
+    .container-four {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+    }
+
+    .left,
+    .left-side,
+    .right,
+    .right-side {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .right,
+    .right-side {
+        background-position: center;
+        background-size: contain;
+        height: 250px;
+    }
+
+    .form-part4,
+    .form-part6,
+    .sign-four,
+    .sign-six,
+    .sign-eight {
+        width: 80%;
+    }
+
+    .form-part7,
+    .sign-nine {
+        width: 80%;
+    }
+}
+
+@media (min-width: 901px) {
+
+    .container-three,
+    .container-four {
+        flex-direction: row;
+    }
+
+    .left,
+    .right,
+    .left-side,
+    .right-side {
+        width: 50%;
+    }
+
+    .form-part4,
+    .form-part6,
+    .sign-four,
+    .sign-six,
+    .sign-eight,
+    .form-part7,
+    .sign-nine {
+        width: 50%;
+    }
+}
