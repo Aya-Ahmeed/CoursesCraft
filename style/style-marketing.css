@@ -85,7 +85,6 @@ body {
 }
 
 .nav-items li:hover {
-    border-bottom: solid 2px #FC427B;
     transform: scale(1.2);
     transition: 1s;
 }
@@ -109,7 +108,9 @@ body {
     z-index: 999;
     min-width: 180px;
 }
-
+#profile-icon{
+    cursor: pointer;
+}
 #welcome-box p {
     margin: 0 0 8px 0;
 }
@@ -209,4 +210,11 @@ input[type="button"]{
      transform: scale(1.05);
      transition: 1s;
 }
+.nav-items a.active {
+    color:#6c5ce7;
+    font-weight: bold;
+    border-bottom: 2px solid #fc5285;
+   font-size: 1.3em;
+}
+
 

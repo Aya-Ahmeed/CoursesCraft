@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll(".nav-items a");
+
+    navLinks.forEach(link => {
+        if (link.href.includes(location.pathname.split("/").pop())) {
+            link.classList.add("active");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const profileIcon = document.getElementById("profile-icon");
     const welcomeBox = document.getElementById("welcome-box");
     const usernameSpan = document.getElementById("username-placeholder");
