@@ -131,9 +131,6 @@ body {
     background-color: #e54873;
 }
 
-section{
-  padding:1rem 7%;
-}
 .container{
     display:flex;
     flex-direction: row;

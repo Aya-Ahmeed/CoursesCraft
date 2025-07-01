@@ -157,7 +157,7 @@ section{
 .left{
     width:30%;
     height: 90%;
-    background-image: url("../images/python.png");
+    background-image: url("../images/python.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -175,7 +175,6 @@ section{
 }
 .head{
     font-size: 1.5rem;
-    margin:1rem;
     background: linear-gradient(to right, #6c5ce7, #FC427B);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -282,7 +281,7 @@ input[type="button"]{
   .left-side {
     width: 100%;
     height: 200px;
-    background-size: cover;
+    background-size: contain;
     margin-bottom: 1rem;
   }
 

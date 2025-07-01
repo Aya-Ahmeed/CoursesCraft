@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
      
             window.location.href = "../structure/Home.html";
         }
+        else{
+            alert("User not found, please sign up!");
+            window.location.href = "../structure/signup.html";
+        }
         
     });
 });
